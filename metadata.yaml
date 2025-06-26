@@ -1,5 +1,5 @@
 homepage: "https://www.newnorth.nl"
 documentation: "https://www.newnorth.nl/tapfiliate-web-tag-template"
 versions:
-  - sha: 6b360ed3fe498716fc5896c9479eddbf3cadf435
+  - sha: 5dcca08111438d1f8045e5a31dd91ca5eaf6e41f
     changeNotes: Initial release.
