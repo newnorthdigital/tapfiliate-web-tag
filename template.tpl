@@ -14,7 +14,7 @@ ___INFO___
   "version": 1,
   "securityGroups": [],
   "displayName": "Tapfiliate Event Tag",
-  "categories": ["AFFILIATE_MARKETING"]
+  "categories": ["AFFILIATE_MARKETING"],
   "brand": {
     "id": "brand_dummy",
     "displayName": "New North Digital",
