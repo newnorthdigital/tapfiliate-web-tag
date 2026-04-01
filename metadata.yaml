@@ -1,5 +1,5 @@
 homepage: "https://tapfiliate.com"
 documentation: "https://github.com/newnorthdigital/tapfiliate-web-tag/blob/main/README.md"
 versions:
-  - sha: 04c3d31a0642845f16e560cb43bae2261a0f75d0
+  - sha: 7056b72d62e1f46ecac327b5dc164944e7bbf771
     changeNotes: "Major update - Added trial/lead event types, coupon tracking, commission types, debug gating, and gallery requirements (categories, tests, description, Tapfiliate logo)."
