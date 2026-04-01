@@ -1,271 +1,141 @@
-# Tapfiliate Client-Side GTM Tag Template
+# Tapfiliate — GTM Tag Template (Client-Side)
 
-## Overview
-
-The Tapfiliate Client-Side GTM Tag Template enables seamless integration of Tapfiliate affiliate tracking directly through Google Tag Manager. This template handles click detection, conversion tracking, and customer lifecycle events using Tapfiliate's JavaScript SDK.
+A Google Tag Manager custom tag template for [Tapfiliate](https://tapfiliate.com) affiliate tracking. Handles click detection, conversions, and customer/trial/lead tracking through the official `tapfiliate.js` library.
 
 ## Features
 
-- **Page View Tracking**: Automatic affiliate click detection
-- **Conversion Tracking**: Track purchases with detailed conversion data
-- **Customer Lifecycle**: Track customer sign-ups, trials, and leads
-- **Advanced Configuration**: Support for cross-domain tracking, custom currencies, and program groups
-- **Debug Mode**: Optional console logging for troubleshooting
+- **Click Detection** — Automatically detect affiliate referral parameters on page views
+- **Conversion Tracking** — Track purchases with order ID, amount, currency, and customer ID
+- **Customer / Trial / Lead** — Register sign-ups for lifetime/recurring commissions
+- **Coupon Tracking** — Attribute conversions via coupon codes (single or comma-separated)
+- **Commission Types** — Specify different commission type identifiers per conversion
+- **Program Groups** — Support multi-site setups with program group identifiers
+- **Cross-Subdomain** — Override cookie domain for cross-subdomain tracking
+- **Debug Mode** — Console logging for troubleshooting
 
 ## Installation
 
-### 1. Import the Template
-
-1. In Google Tag Manager, go to **Templates** → **Tag Templates**
-2. Click **New** and select **Import**
-3. Upload the Tapfiliate Client-Side template file
-4. Save the template
-
-### 2. Create Template Variables
-
-Create the following variables in GTM:
-
-| Variable Name | Type | Description | Required |
-|---------------|------|-------------|----------|
-| `account_id` | Text | Your Tapfiliate account ID | ✅ |
-| `conversion_id` | Text | Unique conversion identifier | ⚠️ |
-| `conversion_value` | Number | Conversion amount | ⚠️ |
-| `customer_id` | Text | Customer identifier | ⚠️ |
-| `cookie_domain` | Text | Domain for cookie placement | ❌ |
-| `referral_code` | Text | Explicit referral code | ❌ |
-| `currency` | Text | 3-letter ISO currency code | ❌ |
-| `program_group` | Text | Program group ID | ❌ |
-
-
-**Legend**: ✅ Required | ⚠️ Required for specific events | ❌ Optional
-
-### 3. Configure Event Type Dropdown
-
-Set up the `event_type` variable with these options:
-- `page_view`
-- `conversion`
-- `customer`
-- `trial`
-- `lead`
-
-## Configuration Guide
+### Option A: Import from Community Gallery
 
-### Page View Tracking
-
-**Purpose**: Detects affiliate clicks and sets tracking cookies.
-
-**Required Variables**:
-- `account_id`
-- `event_type` = `page_view`
+1. In your **web** GTM container, go to **Templates** → **Tag Templates**
+2. Click **Search Gallery** and search for "Tapfiliate"
+3. Add the template to your container
 
-**Optional Variables**:
-- `referral_code` - For explicit referral code tracking
-- `cookie_domain` - For cross-subdomain tracking
-- `program_group` - For multi-domain setups
+### Option B: Manual Import
 
-**Example Setup**:
-```
-Account ID: 12345-abcde
-Event Type: page_view
-Cookie Domain: .yourdomain.com
-```
+1. Download `template.tpl` from this repository
+2. In your web GTM container, go to **Templates** → **Tag Templates** → **New**
+3. Click the **⋮** menu → **Import** and select the `.tpl` file
+4. Click **Save**
 
-### Conversion Tracking
+## Setup
 
-**Purpose**: Tracks completed purchases or conversions.
+### 1. Page View Tag (All Pages)
 
-**Required Variables**:
-- `account_id`
-- `event_type` = `conversion`
+Create a tag for click detection — this must fire on **every page**.
 
-**Recommended Variables**:
-- `conversion_id` - Unique order/transaction ID
-- `conversion_value` - Purchase amount
-- `customer_id` - For lifetime commission tracking
-- `currency` - For multi-currency setups
+| Setting | Value |
+|---|---|
+| Account ID | Your Tapfiliate account ID |
+| Event Type | Page View (detect click) |
+| Trigger | All Pages |
 
-**Example Setup**:
-```
-Account ID: 12345-abcde
-Event Type: conversion
-Conversion ID: {{Transaction ID}}
-Conversion Value: {{Purchase Amount}}
-Customer ID: {{User ID}}
-Currency: USD
-```
+### 2. Conversion Tag (Thank You / Purchase)
 
-### Customer Lifecycle Tracking
+Create a tag for conversion tracking — fires on your purchase confirmation.
 
-**Purpose**: Tracks customer sign-ups, trials, and leads.
+| Setting | Value |
+|---|---|
+| Account ID | Your Tapfiliate account ID |
+| Event Type | Conversion |
+| Conversion ID | `{{Transaction ID}}` (Data Layer variable) |
+| Conversion Amount | `{{Purchase Amount}}` (Data Layer variable) |
+| Customer ID | `{{User ID}}` (optional, for lifetime commissions) |
+| Currency | `USD` (optional, overrides program default) |
+| Trigger | Purchase / Thank You page |
 
-**Required Variables**:
-- `account_id`
-- `event_type` = `customer`, `trial`, or `lead`
-- `customer_id`
+### 3. Customer / Trial / Lead Tag (Sign-Up)
 
-**Example Setup**:
-```
-Account ID: 12345-abcde
-Event Type: trial
-Customer ID: {{User ID}}
-```
+Create a tag for customer registration — fires on sign-up or trial start.
 
-## Event Types Explained
+| Setting | Value |
+|---|---|
+| Account ID | Your Tapfiliate account ID |
+| Event Type | Customer / Trial / Lead |
+| Customer ID | `{{User ID}}` (Data Layer variable) |
+| Trigger | Sign-up / Registration event |
 
-### page_view
-- Scans URL for affiliate parameters
-- Sets tracking cookie when affiliate traffic detected
-- Should be placed on all pages
-- No external calls made for non-affiliate traffic
+## Template Fields
 
-### conversion
-- Records completed purchases/conversions
-- Calculates affiliate commissions
-- Supports percentage and fixed commissions
-- Enables deduplication via conversion_id
+### Required
 
-### customer
-- Tracks general customer sign-ups
-- Sets customer status to "new"
-- Enables future lifetime commission tracking
+| Field | Description |
+|---|---|
+| **Account ID** | Your Tapfiliate account ID (from Profile Settings) |
+| **Event Type** | `page_view`, `conversion`, `customer`, `trial`, or `lead` |
 
-### trial
-- Tracks trial sign-ups
-- Sets customer status to "trial"
-- Ideal for SaaS and subscription businesses
+### Conversion Settings (visible when Event Type = Conversion)
 
-### lead
-- Tracks lead generation
-- Sets customer status to "lead"
-- Perfect for lead-gen and offline sales funnels
+| Field | Description |
+|---|---|
+| Conversion ID | Unique order/transaction ID for cross-referencing and deduplication |
+| Conversion Amount | Monetary value for percentage-based commissions |
+| Customer ID | Unique customer ID for lifetime/recurring commissions |
+| Currency | ISO 4217 code (USD, EUR, GBP, etc.) |
+| Coupon Code(s) | Single code or comma-separated list |
+| Commission Type | Commission type identifier from program settings |
 
-## Advanced Features
+### Customer Settings (visible when Event Type = Customer/Trial/Lead)
 
-### Cross-Domain Tracking
+| Field | Description |
+|---|---|
+| Customer ID | Unique customer identifier (required) |
+| Coupon Code(s) | Coupon code(s) for customer attribution (Customer only) |
 
-When visitors navigate between subdomains:
+### Page View Settings (visible when Event Type = Page View)
 
-```
-Cookie Domain: .yourdomain.com
-```
+| Field | Description |
+|---|---|
+| Referral Code | Explicit referral code (leave empty for auto-detection from URL) |
 
-This ensures the affiliate cookie works across:
-- shop.yourdomain.com
-- checkout.yourdomain.com
-- account.yourdomain.com
+### Advanced Settings
 
-### Multi-Currency Support
+| Field | Description |
+|---|---|
+| Cookie Domain | Override cookie domain for cross-subdomain tracking |
+| Program Group | Program group identifier for multi-domain setups |
+| Debug Logging | Enable console logging for troubleshooting |
 
-For international businesses:
+## How It Works
 
-```
-Currency: EUR
-Currency: GBP
-Currency: JPY
-```
+The template loads `tapfiliate.js` from Tapfiliate's CDN and then executes the appropriate `tap()` calls based on the selected event type:
 
-Overrides your program's default currency per conversion.
+1. **Page View**: `tap('create', ...)` → `tap('detect')` — Sets cookie if affiliate referral parameters are found in the URL
+2. **Conversion**: `tap('create', ...)` → `tap('conversion', externalId, amount, options, commissionType)` — Records the conversion if a valid affiliate cookie exists
+3. **Customer/Trial/Lead**: `tap('create', ...)` → `tap('customer|trial|lead', customerId)` — Registers the customer for future lifetime commissions
 
-### Program Groups
+## Affiliate Attribution Priority
 
-For businesses with multiple brands/domains:
+When a coupon code is provided, it takes precedence over cookie-based (click) attribution. If the coupon isn't associated with an affiliate, Tapfiliate falls back to cookies.
 
-```
-Program Group: brand-a
-Program Group: brand-b
-```
+## Testing
 
-Enables separate tracking for different business units.
+1. Enable **Debug Logging** in the Advanced Settings
+2. Use GTM **Preview Mode**
+3. Check the browser console for `Tapfiliate GTM -` prefixed log messages
+4. Verify in your Tapfiliate dashboard that test conversions appear
 
-### Explicit Referral Codes
+## Resources
 
-Force specific affiliate attribution:
+- [Tapfiliate JavaScript Integration Guide](https://tapfiliate.com/docs/integrations/javascript/)
+- [Tapfiliate.js Reference](https://tapfiliate.com/docs/javascript/)
+- [Tapfiliate REST API](https://tapfiliate.com/docs/rest/)
+- [How to Test Your Integration](https://support.tapfiliate.com/en/articles/1680892)
 
-```
-Referral Code: partner123
-```
+## Author
 
-Useful for:
-- Direct partnerships
-- Campaign-specific tracking
-- Manual attribution
+Created by [New North Digital](https://newnorth.digital)
 
-## Triggers and Setup
+## License
 
-### Recommended Trigger Setup
-
-| Event Type | Trigger | Notes |
-|------------|---------|-------|
-| page_view | All Pages | Essential for click detection |
-| conversion | Purchase Complete | Thank you/confirmation page |
-| customer | Form Submission | Sign-up completion |
-| trial | Trial Started | After trial activation |
-| lead | Lead Form Submit | Lead capture completion |
-
-### Data Layer Integration
-
-The template works with standard e-commerce data layers:
-
-```javascript
-// Page view - automatic
-
-// Conversion
-dataLayer.push({
-  'event': 'purchase',
-  'transaction_id': 'ORD-12345',
-  'value': 99.99,
-  'currency': 'USD',
-  'user_id': 'USER-67890'
-});
-
-// Customer sign-up
-dataLayer.push({
-  'event': 'sign_up',
-  'user_id': 'USER-67890'
-});
-```
-
-## Troubleshooting
-
-### Enable Debug Mode
-
-1. Check the `debug` checkbox in your tag configuration
-2. Open browser console (F12)
-3. Look for messages starting with "Tapfiliate GTM -"
-
-### Common Debug Messages
-
-```
-✅ "Tapfiliate GTM - Script loaded successfully"
-✅ "Tapfiliate GTM - Tap conversion call completed"
-❌ "Tapfiliate GTM - Script failed to load"
-```
-
-### Validation with Tapfiliate Debugger
-
-Use Tapfiliate's built-in debugger to verify tracking:
-
-1. Add `?tapfiliate_debug=1` to your URL
-2. Check for tracking confirmation messages
-3. Verify click and conversion data
-
-### Common Issues
-
-**Issue**: "Script loaded but no actions performed"
-**Solution**: Ensure both `tap('create')` and event method are called
-
-**Issue**: Conversions not attributing correctly
-**Solution**: Verify page view tracking is active on landing pages
-
-**Issue**: Cross-domain tracking not working
-**Solution**: Set `cookie_domain` to your main domain (e.g., `.yourdomain.com`)
-
-## Support
-
-For technical issues:
-1. Enable debug mode and check console logs
-2. Verify all required variables are populated
-3. Test with Tapfiliate's debugger tool
-4. Contact your implementation team with specific error messages
-
-For Tapfiliate-specific questions, consult the [official documentation](https://tapfiliate.com/docs/) or contact Tapfiliate support.
+Apache 2.0 — see [LICENSE](LICENSE).

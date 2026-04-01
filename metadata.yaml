@@ -1,5 +1,5 @@
-homepage: "https://www.newnorth.nl"
-documentation: "https://www.newnorth.nl/tapfiliate-web-tag-template"
+homepage: "https://tapfiliate.com"
+documentation: "https://github.com/newnorthdigital/tapfiliate-web-tag/blob/main/README.md"
 versions:
-  - sha: 5dcca08111438d1f8045e5a31dd91ca5eaf6e41f
-    changeNotes: Initial release.
+  - sha: cd77a766174a888513ef3cbd758b592046c819cf
+    changeNotes: "Major update - Added trial/lead event types, coupon tracking, commission types, debug gating, and gallery requirements (categories, tests, description, Tapfiliate logo)."

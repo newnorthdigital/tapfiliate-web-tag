@@ -1,4 +1,4 @@
-﻿___TERMS_OF_SERVICE___
+___TERMS_OF_SERVICE___
 
 By creating or modifying this file you agree to Google Tag Manager's Community
 Template Gallery Developer Terms of Service available at
@@ -14,13 +14,15 @@ ___INFO___
   "version": 1,
   "securityGroups": [],
   "displayName": "Tapfiliate Event Tag",
-  "categories": ["AFFILIATE_MARKETING", "ANALYTICS"],
+  "categories": [
+    "AFFILIATE_MARKETING"
+  ],
   "brand": {
-    "id": "New North Digital",
+    "id": "brand_dummy",
     "displayName": "New North Digital",
-    "thumbnail": "data:image/jpeg;base64,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\u003d\u003d"
+    "thumbnail": "data:image/png;base64,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"
   },
-  "description": "Tag for analysing Tapfiliate events on website",
+  "description": "Tapfiliate affiliate tracking tag. Supports click detection, conversion tracking, and customer/trial/lead registration via the official tapfiliate.js library.",
   "containerContexts": [
     "WEB"
   ]
@@ -36,17 +38,10 @@ ___TEMPLATE_PARAMETERS___
     "displayName": "Tapfiliate account ID",
     "simpleValueType": true,
     "alwaysInSummary": true,
-    "help": "Enter your 11 digit Tapfiliate account ID",
+    "help": "Enter your Tapfiliate account ID (found in Profile Settings).",
     "valueValidators": [
       {
         "type": "NON_EMPTY"
-      },
-      {
-        "type": "STRING_LENGTH",
-        "args": [
-          12,
-          12
-        ]
       }
     ]
   },
@@ -67,22 +62,29 @@ ___TEMPLATE_PARAMETERS___
       {
         "value": "customer",
         "displayValue": "Customer"
+      },
+      {
+        "value": "trial",
+        "displayValue": "Trial"
+      },
+      {
+        "value": "lead",
+        "displayValue": "Lead"
       }
     ],
     "simpleValueType": true,
-    "help": "Choose which event type you want to measure"
+    "help": "Choose which event type you want to measure."
   },
   {
     "type": "TEXT",
     "name": "referral_code",
     "displayName": "Referral code",
     "simpleValueType": true,
-    "alwaysInSummary": true,
-    "help": "Use this to explicitly pass a specific referral code for this click.",
+    "help": "Use this to explicitly pass a specific referral code for click detection. Leave empty for auto-detection from URL parameters.",
     "enablingConditions": [
       {
         "paramName": "event_type",
-        "paramValue": "Page view",
+        "paramValue": "page_view",
         "type": "EQUALS"
       }
     ]
@@ -99,7 +101,7 @@ ___TEMPLATE_PARAMETERS___
         "type": "EQUALS"
       }
     ],
-    "help": "Enter a unique conversion ID for deduplication purposes"
+    "help": "Enter a unique conversion/order ID for deduplication and cross-referencing."
   },
   {
     "type": "TEXT",
@@ -113,7 +115,7 @@ ___TEMPLATE_PARAMETERS___
         "type": "EQUALS"
       }
     ],
-    "help": "Enter the total value of the conversion to calculate any percentage-based commissions"
+    "help": "Enter the total value of the conversion to calculate any percentage-based commissions."
   },
   {
     "type": "TEXT",
@@ -127,7 +129,7 @@ ___TEMPLATE_PARAMETERS___
         "type": "EQUALS"
       }
     ],
-    "help": "The three letter ISO currency code.\n\nOverride the default currency for this conversion by explicitly passing a currency code."
+    "help": "Three letter ISO 4217 currency code (e.g., EUR, USD). Overrides the program default currency for this conversion."
   },
   {
     "type": "TEXT",
@@ -144,9 +146,52 @@ ___TEMPLATE_PARAMETERS___
         "paramName": "event_type",
         "paramValue": "customer",
         "type": "EQUALS"
+      },
+      {
+        "paramName": "event_type",
+        "paramValue": "trial",
+        "type": "EQUALS"
+      },
+      {
+        "paramName": "event_type",
+        "paramValue": "lead",
+        "type": "EQUALS"
       }
     ],
-    "help": "Enter a unique to set up lifetime/recurring commissions"
+    "help": "Unique customer ID for lifetime/recurring commissions. Required for Customer, Trial, and Lead event types."
+  },
+  {
+    "type": "TEXT",
+    "name": "coupon",
+    "displayName": "Coupon code(s)",
+    "simpleValueType": true,
+    "enablingConditions": [
+      {
+        "paramName": "event_type",
+        "paramValue": "conversion",
+        "type": "EQUALS"
+      },
+      {
+        "paramName": "event_type",
+        "paramValue": "customer",
+        "type": "EQUALS"
+      }
+    ],
+    "help": "Single coupon code or comma-separated list. When provided, coupon attribution takes precedence over cookie-based (click) attribution."
+  },
+  {
+    "type": "TEXT",
+    "name": "commission_type",
+    "displayName": "Commission type",
+    "simpleValueType": true,
+    "enablingConditions": [
+      {
+        "paramName": "event_type",
+        "paramValue": "conversion",
+        "type": "EQUALS"
+      }
+    ],
+    "help": "Commission type identifier from your program settings (e.g., a SKU or category identifier)."
   },
   {
     "type": "GROUP",
@@ -159,16 +204,14 @@ ___TEMPLATE_PARAMETERS___
         "name": "cookie_domain",
         "displayName": "Cookie domain",
         "simpleValueType": true,
-        "enablingConditions": [],
-        "help": "Explicitly define the domain to place the cookie on. Can be used when users land on subdomain A and later convert on subdomain B."
+        "help": "Explicitly define the domain to place the cookie on. Used when users land on subdomain A and later convert on subdomain B."
       },
       {
         "type": "TEXT",
         "name": "program_group",
         "displayName": "Program group",
         "simpleValueType": true,
-        "enablingConditions": [],
-        "help": "The id of the program group to use.\n\nProgram groups are used for multi-domain set-ups."
+        "help": "The ID of the program group to use. Program groups are used for multi-domain setups."
       }
     ]
   },
@@ -198,146 +241,125 @@ const callInWindow = require('callInWindow');
 const logToConsole = require('logToConsole');
 const makeNumber = require('makeNumber');
 
-// Get template variables
 const accountId = data.account_id;
 const eventType = data.event_type;
-const conversionId = data.conversion_id;
-const conversionValue = data.conversion_value;
-const customerId = data.customer_id;
+const enableDebug = data.debug;
 
-// Additional parameters
-const cookieDomain = data.cookie_domain;
-const referralCode = data.referral_code;
-const currency = data.currency;
-const programGroup = data.program_group;
+const debugLog = (message) => {
+  if (enableDebug) {
+    logToConsole('Tapfiliate GTM - ' + message);
+  }
+};
 
-logToConsole('Tapfiliate GTM - Starting with event type: ' + eventType);
+debugLog('Starting with event type: ' + eventType);
 
 const onSuccess = () => {
-  logToConsole('Tapfiliate GTM - Script loaded, now executing tap calls');
-  
-  // Exactly mimic: (function(t,a,p){t.TapfiliateObject=a;t[a]=t[a]||function(){ (t[a].q=t[a].q||[]).push(arguments)}})(window,'tap');
+  debugLog('Script loaded successfully');
+
+  // Ensure the tap command queue exists (mirrors the official Tapfiliate snippet)
   setInWindow('TapfiliateObject', 'tap');
-  
   const existingTap = copyFromWindow('tap');
   if (!existingTap) {
     const tapFunction = function() {
       const tap = copyFromWindow('tap');
-      if (!tap.q) {
-        tap.q = [];
-      }
+      if (!tap.q) { tap.q = []; }
       tap.q.push(arguments);
     };
     tapFunction.q = [];
     setInWindow('tap', tapFunction);
-    logToConsole('Tapfiliate GTM - Created tap function with queue');
+    debugLog('Created tap function with queue');
   }
-  
+
   // Build create options
   const createOptions = { integration: "javascript" };
-  if (cookieDomain) {
-    createOptions.cookie_domain = cookieDomain;
+  if (data.cookie_domain) {
+    createOptions.cookie_domain = data.cookie_domain;
   }
-  if (programGroup) {
-    createOptions.program_group = programGroup;
+  if (data.program_group) {
+    createOptions.program_group = data.program_group;
   }
-  
-  // Call tap('create', ...)
-  logToConsole('Tapfiliate GTM - Calling tap create');
+
   callInWindow('tap', 'create', accountId, createOptions);
-  
-  // Call the event-specific method
+  debugLog('Called tap create');
+
   switch (eventType) {
     case 'page_view':
-      if (referralCode) {
-        logToConsole('Tapfiliate GTM - Calling tap detect with referral code');
-        callInWindow('tap', 'detect', referralCode);
+      if (data.referral_code) {
+        callInWindow('tap', 'detect', { referral_code: data.referral_code });
+        debugLog('Called tap detect with referral code');
       } else {
-        logToConsole('Tapfiliate GTM - Calling tap detect');
         callInWindow('tap', 'detect');
+        debugLog('Called tap detect');
       }
       break;
-      
+
     case 'conversion':
-      logToConsole('Tapfiliate GTM - Processing conversion');
-      
-      // Build conversion call: tap('conversion', external_id, amount, options, commission_type, callback)
-      const conversionCallArgs = ['conversion'];
-      
-      // Add external_id (conversion_id)
-      if (conversionId) {
-        conversionCallArgs.push(conversionId);
-        logToConsole('Tapfiliate GTM - Added external_id: ' + conversionId);
-      } else {
-        conversionCallArgs.push(''); // Empty string if no conversion ID
-      }
-      
-      // Add amount
-      if (conversionValue !== undefined && conversionValue !== null && conversionValue !== '') {
-        conversionCallArgs.push(makeNumber(conversionValue));
-        logToConsole('Tapfiliate GTM - Added amount: ' + conversionValue);
-      } else {
-        conversionCallArgs.push(0); // Default to 0 if no amount
-      }
-      
-      // Build options object
+      const externalId = data.conversion_id || '';
+      const amount = (data.conversion_value !== undefined && data.conversion_value !== null && data.conversion_value !== '')
+        ? makeNumber(data.conversion_value)
+        : 0;
+
       const conversionOptions = {};
-      
-      if (customerId) {
-        conversionOptions.customer_id = customerId;
-        logToConsole('Tapfiliate GTM - Added customer_id to options: ' + customerId);
+      if (data.customer_id) conversionOptions.customer_id = data.customer_id;
+      if (data.currency) conversionOptions.currency = data.currency;
+      if (data.program_group) conversionOptions.program_group = data.program_group;
+
+      // Handle coupon codes — split comma-separated into array if needed
+      if (data.coupon) {
+        const couponStr = data.coupon;
+        if (couponStr.indexOf(',') !== -1) {
+          const parts = couponStr.split(',');
+          const trimmed = [];
+          for (let i = 0; i < parts.length; i++) {
+            const p = parts[i];
+            // Trim whitespace manually (no .trim() in sandbox)
+            let s = 0;
+            let e = p.length - 1;
+            while (s < p.length && p[s] === ' ') s++;
+            while (e > s && p[e] === ' ') e--;
+            trimmed.push(p.substring(s, e + 1));
+          }
+          conversionOptions.coupons = trimmed;
+        } else {
+          conversionOptions.coupons = couponStr;
+        }
       }
-      
-      if (currency) {
-        conversionOptions.currency = currency;
-        logToConsole('Tapfiliate GTM - Added currency to options: ' + currency);
-      }
-      
-      if (programGroup) {
-        conversionOptions.program_group = programGroup;
-        logToConsole('Tapfiliate GTM - Added program_group to options: ' + programGroup);
-      }
-      
-      // Add options object (always add it, even if empty)
-      conversionCallArgs.push(conversionOptions);
-      
-      logToConsole('Tapfiliate GTM - Calling tap conversion with ' + conversionCallArgs.length + ' arguments');
-      
-      // Call with individual arguments since spread operator isn't supported
-      if (conversionCallArgs.length === 4) {
-        callInWindow('tap', conversionCallArgs[0], conversionCallArgs[1], conversionCallArgs[2], conversionCallArgs[3]);
-      } else if (conversionCallArgs.length === 3) {
-        callInWindow('tap', conversionCallArgs[0], conversionCallArgs[1], conversionCallArgs[2]);
-      } else if (conversionCallArgs.length === 2) {
-        callInWindow('tap', conversionCallArgs[0], conversionCallArgs[1]);
+
+      if (data.commission_type) {
+        callInWindow('tap', 'conversion', externalId, amount, conversionOptions, data.commission_type);
+        debugLog('Called tap conversion with commission type: ' + data.commission_type);
       } else {
-        callInWindow('tap', conversionCallArgs[0]);
+        callInWindow('tap', 'conversion', externalId, amount, conversionOptions);
+        debugLog('Called tap conversion');
       }
-      
-      logToConsole('Tapfiliate GTM - Tap conversion call completed');
       break;
-      
+
     case 'customer':
     case 'trial':
     case 'lead':
-      if (customerId) {
-        logToConsole('Tapfiliate GTM - Calling tap ' + eventType);
-        callInWindow('tap', eventType, customerId);
+      if (data.customer_id) {
+        if (data.coupon && eventType === 'customer') {
+          callInWindow('tap', eventType, data.customer_id, { coupons: data.coupon });
+        } else {
+          callInWindow('tap', eventType, data.customer_id);
+        }
+        debugLog('Called tap ' + eventType + ' with customer ID: ' + data.customer_id);
+      } else {
+        debugLog('Error: Customer ID is required for ' + eventType);
+        data.gtmOnFailure();
+        return;
       }
-    logToConsole('Tapfiliate GTM - Tap customer call completed');
       break;
   }
-  
+
   data.gtmOnSuccess();
 };
 
 const onFailure = () => {
-  logToConsole('Tapfiliate GTM - Script failed to load');
+  debugLog('Script failed to load');
   data.gtmOnFailure();
 };
 
-// Load the script first, then execute the calls in the success callback
-logToConsole('Tapfiliate GTM - Loading Tapfiliate script');
 injectScript('https://script.tapfiliate.com/tapfiliate.js', onSuccess, onFailure, 'tapfiliate-script');
 
 
@@ -359,79 +381,31 @@ ___WEB_PERMISSIONS___
               {
                 "type": 3,
                 "mapKey": [
-                  {
-                    "type": 1,
-                    "string": "key"
-                  },
-                  {
-                    "type": 1,
-                    "string": "read"
-                  },
-                  {
-                    "type": 1,
-                    "string": "write"
-                  },
-                  {
-                    "type": 1,
-                    "string": "execute"
-                  }
+                  { "type": 1, "string": "key" },
+                  { "type": 1, "string": "read" },
+                  { "type": 1, "string": "write" },
+                  { "type": 1, "string": "execute" }
                 ],
                 "mapValue": [
-                  {
-                    "type": 1,
-                    "string": "tap"
-                  },
-                  {
-                    "type": 8,
-                    "boolean": true
-                  },
-                  {
-                    "type": 8,
-                    "boolean": true
-                  },
-                  {
-                    "type": 8,
-                    "boolean": true
-                  }
+                  { "type": 1, "string": "tap" },
+                  { "type": 8, "boolean": true },
+                  { "type": 8, "boolean": true },
+                  { "type": 8, "boolean": true }
                 ]
               },
               {
                 "type": 3,
                 "mapKey": [
-                  {
-                    "type": 1,
-                    "string": "key"
-                  },
-                  {
-                    "type": 1,
-                    "string": "read"
-                  },
-                  {
-                    "type": 1,
-                    "string": "write"
-                  },
-                  {
-                    "type": 1,
-                    "string": "execute"
-                  }
+                  { "type": 1, "string": "key" },
+                  { "type": 1, "string": "read" },
+                  { "type": 1, "string": "write" },
+                  { "type": 1, "string": "execute" }
                 ],
                 "mapValue": [
-                  {
-                    "type": 1,
-                    "string": "TapfiliateObject"
-                  },
-                  {
-                    "type": 8,
-                    "boolean": true
-                  },
-                  {
-                    "type": 8,
-                    "boolean": true
-                  },
-                  {
-                    "type": 8,
-                    "boolean": false
-                  }
+                  { "type": 1, "string": "TapfiliateObject" },
+                  { "type": 8, "boolean": true },
+                  { "type": 8, "boolean": true },
+                  { "type": 8, "boolean": false }
                 ]
               }
             ]
@@ -439,9 +413,7 @@ ___WEB_PERMISSIONS___
         }
       ]
     },
-    "clientAnnotations": {
-      "isEditedByUser": true
-    },
+    "clientAnnotations": { "isEditedByUser": true },
     "isRequired": true
   },
   {
@@ -456,18 +428,13 @@ ___WEB_PERMISSIONS___
           "value": {
             "type": 2,
             "listItem": [
-              {
-                "type": 1,
-                "string": "https://script.tapfiliate.com/tapfiliate.js"
-              }
+              { "type": 1, "string": "https://script.tapfiliate.com/tapfiliate.js" }
             ]
           }
         }
       ]
     },
-    "clientAnnotations": {
-      "isEditedByUser": true
-    },
+    "clientAnnotations": { "isEditedByUser": true },
     "isRequired": true
   },
   {
@@ -479,16 +446,11 @@ ___WEB_PERMISSIONS___
       "param": [
         {
           "key": "environments",
-          "value": {
-            "type": 1,
-            "string": "debug"
-          }
+          "value": { "type": 1, "string": "debug" }
         }
       ]
     },
-    "clientAnnotations": {
-      "isEditedByUser": true
-    },
+    "clientAnnotations": { "isEditedByUser": true },
     "isRequired": true
   }
 ]
@@ -496,11 +458,137 @@ ___WEB_PERMISSIONS___
 
 ___TESTS___
 
-scenarios: []
+scenarios:
+- name: "Page view - detect click"
+  code: |-
+    const mockData = {
+      account_id: '12345-abcde',
+      event_type: 'page_view',
+      debug: false
+    };
+    mock('injectScript', function(url, onSuccess, onFailure, cacheToken) {
+      onSuccess();
+    });
+    runCode(mockData);
+    assertApi('injectScript').wasCalled();
+    assertApi('gtmOnSuccess').wasCalled();
+
+- name: "Page view - with referral code"
+  code: |-
+    const mockData = {
+      account_id: '12345-abcde',
+      event_type: 'page_view',
+      referral_code: 'abc123',
+      debug: false
+    };
+    mock('injectScript', function(url, onSuccess, onFailure, cacheToken) {
+      onSuccess();
+    });
+    runCode(mockData);
+    assertApi('gtmOnSuccess').wasCalled();
+
+- name: "Conversion - basic"
+  code: |-
+    const mockData = {
+      account_id: '12345-abcde',
+      event_type: 'conversion',
+      conversion_id: 'order-456',
+      conversion_value: '99.95',
+      currency: 'EUR',
+      debug: false
+    };
+    mock('injectScript', function(url, onSuccess, onFailure, cacheToken) {
+      onSuccess();
+    });
+    runCode(mockData);
+    assertApi('gtmOnSuccess').wasCalled();
+
+- name: "Conversion - with commission type"
+  code: |-
+    const mockData = {
+      account_id: '12345-abcde',
+      event_type: 'conversion',
+      conversion_id: 'order-789',
+      conversion_value: '150.00',
+      commission_type: 'premium',
+      debug: false
+    };
+    mock('injectScript', function(url, onSuccess, onFailure, cacheToken) {
+      onSuccess();
+    });
+    runCode(mockData);
+    assertApi('gtmOnSuccess').wasCalled();
+
+- name: "Customer registration"
+  code: |-
+    const mockData = {
+      account_id: '12345-abcde',
+      event_type: 'customer',
+      customer_id: 'cust-001',
+      debug: false
+    };
+    mock('injectScript', function(url, onSuccess, onFailure, cacheToken) {
+      onSuccess();
+    });
+    runCode(mockData);
+    assertApi('gtmOnSuccess').wasCalled();
+
+- name: "Customer - fails without customer ID"
+  code: |-
+    const mockData = {
+      account_id: '12345-abcde',
+      event_type: 'customer',
+      customer_id: '',
+      debug: false
+    };
+    mock('injectScript', function(url, onSuccess, onFailure, cacheToken) {
+      onSuccess();
+    });
+    runCode(mockData);
+    assertApi('gtmOnFailure').wasCalled();
+
+- name: "Trial registration"
+  code: |-
+    const mockData = {
+      account_id: '12345-abcde',
+      event_type: 'trial',
+      customer_id: 'trial-001',
+      debug: false
+    };
+    mock('injectScript', function(url, onSuccess, onFailure, cacheToken) {
+      onSuccess();
+    });
+    runCode(mockData);
+    assertApi('gtmOnSuccess').wasCalled();
+
+- name: "Lead registration"
+  code: |-
+    const mockData = {
+      account_id: '12345-abcde',
+      event_type: 'lead',
+      customer_id: 'lead-001',
+      debug: false
+    };
+    mock('injectScript', function(url, onSuccess, onFailure, cacheToken) {
+      onSuccess();
+    });
+    runCode(mockData);
+    assertApi('gtmOnSuccess').wasCalled();
+
+- name: "SDK failure calls gtmOnFailure"
+  code: |-
+    const mockData = {
+      account_id: '12345-abcde',
+      event_type: 'page_view',
+      debug: false
+    };
+    mock('injectScript', function(url, onSuccess, onFailure, cacheToken) {
+      onFailure();
+    });
+    runCode(mockData);
+    assertApi('gtmOnFailure').wasCalled();
 
 
 ___NOTES___
 
-Created on 26-6-2025, 11:16:26
-
-
+Created on 2025-01-01 by New North Digital (newnorth.digital).
