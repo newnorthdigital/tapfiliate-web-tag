@@ -134,7 +134,7 @@ When a coupon code is provided, it takes precedence over cookie-based (click) at
 
 ## Author
 
-Created by [New North Digital](https://newnorth.digital)
+Created by [New North Digital](https://newnorth.digital?utm_source=github&utm_medium=gtm-template&utm_campaign=tapfiliate-web-tag)
 
 ## License
 
